@@ -10,7 +10,10 @@
           <a class="nav-link active" aria-current="page" href="home.php">Home</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="#">Jogos</a>
+          <a class="nav-link" href="cadastro_jg.php">Jogos</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="jgs.php">Ver Jogos</a>
         </li>
         <li class="nav-item">
           <a class="nav-link" href="#">Consoles</a>

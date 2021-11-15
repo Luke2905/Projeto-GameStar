@@ -12,12 +12,16 @@
         <li class="nav-item">
           <a class="nav-link" href="jgs.php">Jogos</a>
         </li>
+        <li class="nav-item">
+          <a class="nav-link" href="consoles.php">Consoles</a>
+        </li>
         <li class="nav-item dropdown">
           <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
             Cadastro
           </a>
           <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
             <li><a class="dropdown-item" href="cadastro_jg.php">Cadastrar Jogos</a></li>
+            <li><a class="dropdown-item" href="cadastro_console.php">Cadastrar Consoles</a></li>
           </ul>
         </li>
     </div>

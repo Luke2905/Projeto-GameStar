@@ -1,14 +1,14 @@
 <?php
-include 'conexao.php';
+include 'conexao1.php';
 
-class Jgs_DB{
-    public function cadastrarJogo(Jogos $be){
+class Consoles_DB{
+    public function cadastrarConsoles(Consoles $be){
         $nome = $_POST['nome'];
-        $genero = $_POST['genero'];
-        $faixa_etaria = $_POST['classificacao'];
+        $marca = $_POST['marca'];
+        $url = $_POST['url'];
         $preco = $_POST['preco'];
-        $sql = "insert into jogos(nome, genero, classificacao, preco) values('$nome', '$genero', '$faixa_etaria', '$preco')";
-        $banco= new Conexao();
+        $sql = "insert into consoles(nome, marca, preco, url) values('$nome', '$marca', '$preco', '$url')";
+        $banco= new Conexao1();
         $con = $banco->getConexao();
         $result = $con->query($sql);
 
@@ -20,10 +20,10 @@ class Jgs_DB{
     }
 
 
-    public function buscarJogo(){
-		$sql = "select * from jogos";
+    public function buscarConsoles(){
+		$sql = "select * from consoles";
 		
-		$banco= new Conexao();
+		$banco= new Conexao1();
 		$con = $banco->getConexao();
 		
 		$stm = $con->prepare($sql);
@@ -38,10 +38,10 @@ class Jgs_DB{
 
 	}
 
-    public function buscarJogoHome(){
-		$sql = "select * from jogos where preco < 70";
+    public function buscarConsolesHome(){
+		$sql = "select * from consoles where preco < 1000";
 		
-		$banco= new Conexao();
+		$banco= new Conexao1();
 		$con = $banco->getConexao();
 		
 		$stm = $con->prepare($sql);

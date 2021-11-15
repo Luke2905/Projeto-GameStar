@@ -18,6 +18,12 @@
     h2{
         text-align: center;
     }
+    .h2titulo{
+        text-align: center;
+        color: #1b1c1b;
+        text-shadow: 3px 3px #0008ff;
+        font-family: 'Permanent Marker', cursive;
+    }
     header{
     background-image: url(https://image.shutterstock.com/image-photo/concept-video-game-competition-esports-260nw-1752952466.jpg);
     background-size: 100%;
@@ -25,10 +31,22 @@
     .cadjg{
         margin: 10px;
     }
-    input{
+    #cons{
+        margin-top: 20px;
         border-radius: 10px;
         border-style: solid;
+        border-color:   #130052;
         border-width: 3px;
+        background-color: #9093fc;
+    }
+    #jg{
+        margin-top: 20px;
+        border-radius: 20px 0px 20px 0px;
+        border-style: dotted;
+        border-color: #ff003c;
+        border-width: thick;
+        background-color: #db8c9f;
+
     }
 </style>
 </head>

@@ -4,23 +4,23 @@
 
 <div class="col-3">
     <label class="visually-hidden" for="autoSizingInput">Nome</label>
-    <input type="text" required="required"  name="nome" placeholder="NOME">
+    <input id="jg" type="text" required="required"  name="nome" placeholder="NOME">
 </div>
 <div class="col-3">
     <label class="visually-hidden" for="autoSizingInput">Genero</label>
-    <input type="text" required="required"  name="genero" placeholder="Genero">
+    <input id="jg" type="text" required="required"  name="genero" placeholder="Genero">
 </div>
 <div class="col-3">
     <label class="visually-hidden" for="autoSizingInput">Genero</label>
-    <input type="number" required="required"  name="classificacao" placeholder="Classificação Etaria" step="any">
+    <input id="jg" type="number" required="required"  name="classificacao" placeholder="Classificação Etaria" step="any">
 </div>
 <div class="col-3">
     <label class="visually-hidden" for="autoSizingInput">Preço</label>
-    <input type="number" required="required"  name="preco" placeholder="Preco">  
+    <input id="jg" type="number" required="required"  name="preco" placeholder="Preco">  
 </div>
 
 <div class="col-sm-3">
-  <button type="submit" id="a01" class="btn btn-dark" value="cadastrar" name="botao">Cadastrar</button>
+  <button type="submit" id="a01" class="btn btn-danger" value="cadastrar" name="botao">Cadastrar</button>
 </div>
 
 </form>

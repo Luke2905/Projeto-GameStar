@@ -1,6 +1,6 @@
 <h1>Games Star</h1>
 
-<h2 class="h2titulo">Jogos</h2>
+<h2>Jogos</h2>
 
 <section class="py-5" action="jgs_conteudo.php" method="GET">   
 <div class='container px-4 px-lg-5 mt-5'>
@@ -14,7 +14,7 @@ if($Jgs_DB->buscarJogo() == 0){
     echo "<p style='color: white';>Nenhum Jogo cadastrado.</p> ";
 } else {
  foreach ($Jgs_DB->buscarJogoHome() as $resultado){
-        echo " <div class='col mb-5'>";
+        echo " <div class='col mb-5' >";
         echo "<div class='card h-100'>";
         echo "<img class='card-img-top' src='https://dummyimage.com/450x300/dee2e6/6c757d.jpg' alt='...' />";
         echo "<div class='card-body p-4'>";
@@ -40,7 +40,7 @@ if($Jgs_DB->buscarJogo() == 0){
 </section>
 <span class="placeholder col-12"></span>
 
-<h2 class="h2titulo">Consoles</h2>
+<h2 >Consoles</h2>
 
 <section class="py-5" action="consoles_conteudo.php" method="GET">   
 <div class='container px-4 px-lg-5 mt-5'>

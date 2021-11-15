@@ -4,19 +4,19 @@
 
 <div class="col-3">
     <label class="visually-hidden" for="autoSizingInput">Nome</label>
-    <input type="text" required="required"  name="nome" placeholder="NOME">
+    <input id="cons" type="text" required="required"  name="nome" placeholder="NOME">
 </div>
 <div class="col-3">
     <label class="visually-hidden" for="autoSizingInput">Marca</label>
-    <input type="text" required="required"  name="marca" placeholder="Genero">
+    <input id="cons" type="text" required="required"  name="marca" placeholder="Marca">
 </div>
 <div class="col-3">
     <label class="visually-hidden" for="autoSizingInput">Preço</label>
-    <input type="number" required="required"  name="preco" placeholder="Preco">  
+    <input id="cons"  type="number" required="required"  name="preco" placeholder="Preco">  
 </div>
 <div class="col-3">
     <label class="visually-hidden" for="autoSizingInput">URL</label>
-    <input type="url" required="required"  name="url" placeholder="URL da imagem">
+    <input id="cons"  type="url" required="required"  name="url" placeholder="URL da imagem">
 </div>
 
 

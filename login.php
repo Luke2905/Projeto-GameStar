@@ -10,9 +10,23 @@
     <style>
     .container{
         padding: 20px;
+        margin-top: 100px;   
     }
     h1{
+        margin-top: 50px;
         text-align: center;
+    }
+    .card{
+        background-color: transparent;
+        color: white;
+        border-style: solid;
+        border-color: black;
+        border-radius: 30px 0px 30px 0;
+    }
+    .form-control{
+        border-style: solid;
+        border-color: black;
+        border-radius: 70px;
     }
 </style>
 </head>
@@ -21,7 +35,8 @@
 <div class="container">
     <div class="row">
         <div class="col"></div>
-        <div class="col"><div class="card">
+        <div class="col">
+            <div class="card">
   <div class="card-header">
    Login
   </div>
@@ -32,7 +47,7 @@
        <label class="form-label" for="">Senha</label>
        <input class="form-control" type="password" name="senha" id="">
        <button class="mt-3 form-control btn btn-primary" type="submit">Login</button>
-       <a href="cadastro.php">Novo Usuario</a>
+       <a href="cadastro_pessoa.php">Novo Usuario</a>
    </form>
   </div>
 </div></div>

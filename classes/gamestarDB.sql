@@ -19,3 +19,5 @@ create table consoles(
     preco decimal (10,2),
     url varchar(2083)
 );
+
+alter table jogos add  url varchar(2083);  

@@ -28,9 +28,6 @@
     background-image: url(https://image.shutterstock.com/image-photo/concept-video-game-competition-esports-260nw-1752952466.jpg);
     background-size: 100%;
     }
-    .cadjg{
-        margin: 10px;
-    }
     #cons{
         margin-top: 20px;
         border-radius: 10px;

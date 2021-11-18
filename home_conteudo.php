@@ -1,3 +1,18 @@
+<style>
+        .card-img-top{
+        border-radius: 200px;
+        max-width: 250px;
+        max-height: 250px;
+
+    }
+    .card{
+        background-color: #3f0385;
+        border-style: solid;
+        border-width: 3px;
+        color: white;
+        border-radius: 20px 0px 20px 0px;
+    }
+</style>
 <h1>Games Star</h1>
 
 <h2>Jogos</h2>
@@ -16,7 +31,7 @@ if($Jgs_DB->buscarJogo() == 0){
  foreach ($Jgs_DB->buscarJogoHome() as $resultado){
         echo " <div class='col mb-5' >";
         echo "<div class='card h-100'>";
-        echo "<img class='card-img-top' src='https://dummyimage.com/450x300/dee2e6/6c757d.jpg' alt='...' />";
+        echo "<img class='card-img-top' src=".$resultado['url']." alt='...' />";
         echo "<div class='card-body p-4'>";
         echo "<div class='text-center'>";
         echo "<h5 class='fw-bolder'>".$resultado['nome']."</h5>";
@@ -26,7 +41,7 @@ if($Jgs_DB->buscarJogo() == 0){
         echo "</div>";
         echo "</div>";
         echo " <div class='card-footer p-4 pt-0 border-top-0 bg-transparent'>";
-        echo "<div class='text-center'><a class='btn btn-outline-dark mt-auto' href='jgs.php'>Ver Jogos</a></div>";
+        echo "<div class='text-center'><a class='btn btn-outline-light mt-auto' href='jgs.php'>Ver Jogos</a></div>";
         echo "</div>";
         echo "</div>";
         echo "</div>";
@@ -56,7 +71,7 @@ if($Consoles_DB->buscarConsoles() == 0){
  foreach ($Consoles_DB->buscarConsolesHome() as $resultado){
         echo " <div class='col mb-5'>";
         echo "<div class='card h-100'>";
-        echo "<img class='card-img-top' src=".$resultado['url']." alt='...' />";
+        echo "<img class='card-img-top ' src=".$resultado['url']." alt='...' />";
         echo "<div class='card-body p-4'>";
         echo "<div class='text-center'>";
         echo "<h5 class='fw-bolder'>".$resultado['nome']."</h5>";
@@ -65,7 +80,7 @@ if($Consoles_DB->buscarConsoles() == 0){
         echo "</div>";
         echo "</div>";
         echo " <div class='card-footer p-4 pt-0 border-top-0 bg-transparent'>";
-        echo "<div class='text-center'><a class='btn btn-outline-dark mt-auto' href='consoles.php'>Ver Consoles</a></div>";
+        echo "<div class='text-center'><a class='btn btn-outline-light mt-auto' href='consoles.php'>Ver Consoles</a></div>";
         echo "</div>";
         echo "</div>";
         echo "</div>";

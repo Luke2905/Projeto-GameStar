@@ -18,10 +18,26 @@
     <label class="visually-hidden" for="autoSizingInput">Preço</label>
     <input id="jg" type="number" required="required"  name="preco" placeholder="Preco">  
 </div>
-
+<div class="col-3">
+    <label class="visually-hidden" for="autoSizingInput">URL</label>
+    <input id="jg"  type="url" required="required"  name="url" placeholder="URL da imagem">
+</div>
 <div class="col-sm-3">
   <button type="submit" id="a01" class="btn btn-danger" value="cadastrar" name="botao">Cadastrar</button>
 </div>
 
 </form>
 </div>
+<span class="placeholder col-12"></span>
+<h2 class="h2titulo">Deletar Jogos</h2>
+
+<form class="row g-3" method="POST" action="deletar.php">
+    <div class="col-3">
+    <label class="visually-hidden" for="autoSizingInput">Nome</label>
+    <input id="jg" type="text" required="required"  name="nome" placeholder="NOME">
+</div>
+<div class="col-sm-3">
+  <button type="submit" id="a01" class="btn btn-danger" value="deletar" name="botao">Deletar</button>
+</div>
+ 
+</form>

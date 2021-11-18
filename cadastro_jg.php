@@ -24,5 +24,4 @@ $Jgs_DB = new Jgs_DB();
 
  }
 
-
 }

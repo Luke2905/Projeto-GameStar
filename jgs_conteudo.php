@@ -14,7 +14,7 @@ if($Jgs_DB->buscarJogo() == 0){
  foreach ($Jgs_DB->buscarJogo() as $resultado){
         echo " <div class='col mb-5'>";
         echo "<div class='card h-100'>";
-        echo "<img class='card-img-top' src='https://dummyimage.com/450x300/dee2e6/6c757d.jpg' alt='...' />";
+        echo "<img class='card-img-top' src=".$resultado['url']." alt='...' />";
         echo "<div class='card-body p-4'>";
         echo "<div class='text-center'>";
         echo "<h5 class='fw-bolder'>".$resultado['nome']."</h5>";

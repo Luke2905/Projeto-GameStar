@@ -7,7 +7,8 @@ class Jgs_DB{
         $genero = $_POST['genero'];
         $faixa_etaria = $_POST['classificacao'];
         $preco = $_POST['preco'];
-        $sql = "insert into jogos(nome, genero, classificacao, preco) values('$nome', '$genero', '$faixa_etaria', '$preco')";
+        $url = $_POST['url'];
+        $sql = "insert into jogos(nome, genero, classificacao, preco, url) values('$nome', '$genero', '$faixa_etaria', '$preco', '$url')";
         $banco= new Conexao();
         $con = $banco->getConexao();
         $result = $con->query($sql);
@@ -55,4 +56,17 @@ class Jgs_DB{
         }
 
 	}
+    public function deletarJogo(Jogos $be){
+        $nome = $_POST['nome'];
+        $sql = "delete from jogos where nome ='$nome'";
+        $banco= new Conexao();
+        $con = $banco->getConexao();
+        $result = $con->query($sql);
+
+        if($result){
+            echo "<span class='help-block' style='color: green;  margin: 10px;'>Jogo deletado</span>";
+        }else {
+            echo "<span class='help-block' style='color: Red;'>Erro ao deletar!</span>";
+        }
+    }
 }

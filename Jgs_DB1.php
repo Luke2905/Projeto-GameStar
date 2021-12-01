@@ -1,8 +1,8 @@
 <?php
 
-require_once 'conexao.php';
+require_once 'classes/conexao.php';
 
-class Jgs_DB{
+class Jgs_DB1{
     public function cadastrarJogo(Jogos $be){
         $nome = $_POST['nome'];
         $genero = $_POST['genero'];
@@ -13,7 +13,7 @@ class Jgs_DB{
         $banco= new Conexao();
         $con = $banco->getConexao();
         $result = $con->query($sql);
-        
+
         if($result){
             echo "<span class='help-block' style='color: Blue;'>Cadastro efetuado com sucesso!</span>";
         }else {

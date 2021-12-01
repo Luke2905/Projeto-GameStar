@@ -45,6 +45,10 @@
         background-color: #db8c9f;
 
     }
+    #del{
+        background-color: white;
+        border-style: solid;
+    }
 </style>
 </head>
 <body>

@@ -66,7 +66,7 @@ class Jgs_DB{
         $result = $con->query($sql);
 
         if($result){
-            echo "<span class='help-block' style='color: green;  margin: 10px;'>Jogo deletado</span>";
+            echo "<span class='help-block' style='color: green;  margin: 10px;'>".$nome." deletado</span>";
         }else {
             echo "<span class='help-block' style='color: Red;'>Erro ao deletar!</span>";
         }

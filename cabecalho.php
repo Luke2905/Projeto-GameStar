@@ -10,6 +10,7 @@
 <style>
     body{
         background-image: linear-gradient(to bottom right, #454f3e, #9c0096);
+        background-attachment: fixed;
     }
     h1{
         text-align: center;

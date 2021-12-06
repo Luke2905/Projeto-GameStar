@@ -25,8 +25,8 @@
 include 'classes/Jgs_DB.php';
 
 $Jgs_DB = new Jgs_DB();
-if($Jgs_DB->buscarJogo() == 0){
-    echo "<p style='color: white';>Nenhum Jogo cadastrado.</p> ";
+if($Jgs_DB->buscarJogoHome() == 0){
+    echo "<p style='color: white';>Nenhum Jogo em promoção.</p> ";
 } else {
  foreach ($Jgs_DB->buscarJogoHome() as $resultado){
         echo " <div class='col mb-5' >";
@@ -65,7 +65,7 @@ if($Jgs_DB->buscarJogo() == 0){
 include 'classes/Consoles_DB.php';
 
 $Consoles_DB = new Consoles_DB();
-if($Consoles_DB->buscarConsoles() == 0){
+if($Consoles_DB->buscarConsolesHome() == 0){
     echo "<p style='color: white';>Nenhum Console cadastrado.</p> ";
 } else {
  foreach ($Consoles_DB->buscarConsolesHome() as $resultado){

@@ -21,7 +21,7 @@
           </a>
           <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
             <li><a class="dropdown-item" href="cadastro_jg.php">Cadastrar Jogos</a></li>
-            <li><a class="dropdown-item" href="cadastro_console.php">Cadastrar Consoles</a></li>
+            <li><a class="dropdown-item" href="del_jg.php">Deletar Jogos</a></li>
           </ul>
         </li>
         <li class="nav-item dropdown">
@@ -29,8 +29,8 @@
           Administrar Consoles
           </a>
           <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-            <li><a class="dropdown-item" href="cadastro_jg.php">Cadastrar Jogos</a></li>
             <li><a class="dropdown-item" href="cadastro_console.php">Cadastrar Consoles</a></li>
+            <li><a class="dropdown-item" href="#">Deletar Consoles</a></li>
           </ul>
         </li>
     </div>

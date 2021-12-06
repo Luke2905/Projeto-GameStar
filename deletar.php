@@ -1,8 +1,4 @@
 <?php
-// include "Layout.php";
-// $layout = new Layout();
-// $layout->conteudo = "formulario";
-// $layout->index();
 
 
 include 'classes/Class_jg.php';
@@ -20,4 +16,5 @@ if (isset($_POST['nome'])){
   $Jgs_DB->deletarJogo($jogo); 
  }
 }
-header("Refresh:1; url=cadastro_jg.php");
+header("Refresh:1; url=del_jg.php");
+

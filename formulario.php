@@ -36,27 +36,3 @@
 </div>
 
 <span class="placeholder col-12"></span>
-
-<h2 class="h2titulo">Deletar Jogos</h2>
-
-<form class="row g-3" method="POST" action="deletar.php">
-<?php
-
-include 'Jgs_DB1.php';
-
-$Jgs_DB = new Jgs_DB1();
-if($Jgs_DB->buscarJogo() == 0){
-    echo "<p style='color: white';>Nenhum Jogo cadastrado.</p> ";
-} else {
-  foreach ($Jgs_DB->buscarJogo() as $resultado){
-  echo "<div id='del' class='col-3'>";
-  echo "<label class='visually-hidden' for='autoSizingInput'></label>";
-  echo "<input  type='text' readonly  required='required'  name='nome' value='".$resultado['nome']."'>";
-  echo "</div>";
-  echo "<div class='col-sm-3'>";
-  echo "<button type='submit' id='a01' class='btn btn-danger' value='deletar' name='botao'>Deletar</button>";
-  echo "</div>";
-  }
-}
-?>
-</form>

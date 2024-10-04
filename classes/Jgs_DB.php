@@ -59,14 +59,19 @@ class Jgs_DB{
 	}
 
     public function deletarJogo(Jogos $be){
-        $nome = $_POST['nome'];
-        $sql = "delete from jogos where nome ='$nome'";
+        $id = $_POST['id'];
+        $busca = "select nome from jogos where id ='$id'";
+        $banco= new Conexao();
+        $con = $banco->getConexao();
+        $resultado = $con->query($busca);
+        $nome = $resultado;
+        $sql = "delete from jogos where id ='$id'";
         $banco= new Conexao();
         $con = $banco->getConexao();
         $result = $con->query($sql);
 
         if($result){
-            echo "<span class='help-block' style='color: green;  margin: 10px;'>".$nome." deletado</span>";
+            echo "<span class='help-block' style='color: green;  margin: 10px;'>deletado</span>";
         }else {
             echo "<span class='help-block' style='color: Red;'>Erro ao deletar!</span>";
         }
